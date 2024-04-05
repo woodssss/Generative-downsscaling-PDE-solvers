@@ -5,12 +5,9 @@ The usage of code is basically the same for each example, here we only present t
 ## Nonlinear reaction diffusion equation
 Consider 
 ```
-f_t = d f_xx + k f^2,
+-0.0005 \Delta u + u^3 = a,
 ```
-with zero BC
-```
-f(t,0)=f(t,1)=0.
-```
+with zero BC.
 ### Data generation
 ```
 python nrd_sample_1d_evo.py k d l
