@@ -23,7 +23,7 @@ python main_2D.py
 ```
 python FNO_2D.py
 ```
-#### Compare all solver
+#### Compare all solvers (CSI, FNO, DDPM, DDIM and theirs fine tune)
 ```
 python Solver_2D.py
 ```
