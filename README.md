@@ -10,7 +10,7 @@ Consider
 with zero BC.
 ### Data generation
 ```
-python nrd_sample_1d_evo.py k d l
+python gen_P_2do.py -ns 200 -nex 40 -nx 16 -m 8 -d0 -0.0003 -d1 1 -d2 1 -alp 1 -tau 7 -flg 1 -seed 9 
 ````
 k,d are the parameters within nrd equation and l is the parameter within covariance kernel. This code generates 10000 training functions and 30 test functions. One may run it on colab as well
 ```
