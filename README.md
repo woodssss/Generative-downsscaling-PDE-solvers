@@ -1,8 +1,7 @@
 # Generative downscaling PDE solver
-This project provides codes for paper [Generative downscaling of PDE solvers with physics-guided diffusion models]. In this project, we propose a novel data-driven surrogate 
-for solving PDEs using diffusion models. 
+This project provides codes for paper [Generative downscaling of PDE solvers with physics-guided diffusion models](https://arxiv.org/pdf/2404.05009.pdf). In this project, we propose physics-guided diffusion models (pgdm), a novel, data-driven surrogate approach for solving PDEs. Our approach initially train a diffusion model that upscales the low fidelity solution to high fidelity solution, which are subsequently refined by minimizing the physical discrepancies as defined by the discretized PDEs at the finer scale.
 # Usage of code
-The usage of code is basically the same for each example, here we only present the details of implementing the 2D Nonlinear Poisson. The Jupyter notebook step by step demonstration can be found in the notebook folder.  
+This section outlines the standard procedure for utilizing the code, with a focus on the implementation of the 2D Nonlinear Poisson solver. The Jupyter notebook step by step demonstration is in the 'pgdm_demo.ipynb'.  
 ## Nonlinear reaction diffusion equation
 Consider 
 ```
