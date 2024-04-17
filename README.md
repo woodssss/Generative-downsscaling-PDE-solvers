@@ -14,7 +14,7 @@ python gen_P_2d.py -ns 200 -nex 40 -nx 16 -m 8 -d0 -0.0005 -d1 1 -d2 1 -alp 1.6 
 ````
 - The above code generates 200 data tuples {a_k, u_k^c, u_k^f}_{k=1}^{200}. 
   - The coarse mesh grid size is 16x16 and the fine mesh grid size is 128x128 (8 times superresolution).
-  - The diffusion parameter d1 is set to be -0.0005 and the reaction coefficient d2 is set to be 1.
+  - The diffusion parameter d0 is set to be -0.0005 and the reaction coefficient d1 and the source coefficient is set to be 1.
   - The source term a is sampled from Gaussian random field N(0, (-\Delta + \tau^2 I)^{-alpha}), where alpha and tau are set to be 1.6 and 7 respectively.
 ### Model training and prediction 
 The configuration (network architecture, training strategies, etc) of the diffusion model and the FNO are defined in the config_2D.py 
